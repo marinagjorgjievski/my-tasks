@@ -7,18 +7,18 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RegisterComponent } from './auth/register/register.component';
 import { LoginComponent } from './auth/login/login.component';
-import { MyTasksComponent } from './component/my-tasks/my-tasks.component';
 import { TaskListComponent } from './component/my-tasks/task-list/task-list.component';
 import { TaskFormComponent } from './component/my-tasks/task-form/task-form.component';
+import { HomeComponent } from './component/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     LoginComponent,
-    MyTasksComponent,
     TaskListComponent,
     TaskFormComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

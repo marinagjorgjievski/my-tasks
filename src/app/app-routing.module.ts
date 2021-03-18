@@ -4,8 +4,10 @@ import { TaskListComponent } from './component/my-tasks/task-list/task-list.comp
 import { RegisterComponent } from './auth/register/register.component';
 import { LoginComponent } from './auth/login/login.component';
 import { TaskFormComponent } from './component/my-tasks/task-form/task-form.component';
+import { HomeComponent } from './component/home/home.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'register', component: RegisterComponent},
   { path: 'login', component: LoginComponent},
   { path: 'my-tasks', component: TaskListComponent, 
