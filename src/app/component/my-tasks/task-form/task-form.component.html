@@ -5,10 +5,10 @@
     </div>
     <form *ngIf="!isLoading" [formGroup]="taskForm" (ngSubmit)="onSubmit()">
       <div *ngIf="!editMode">
-        <h3 class="card-label font-weight-bolder text-dark">Add Task</h3>
+        <h3 class="card-label font-weight-bolder text-secondary">Add Task</h3>
       </div>
       <div *ngIf="editMode">
-        <h3  class="card-label font-weight-bolder text-dark">Edit Task</h3>
+        <h3  class="card-label font-weight-bolder text-secondary">Edit Task</h3>
         <h2>{{task.description}} Details</h2>
       </div>
       <div class="form-group">
