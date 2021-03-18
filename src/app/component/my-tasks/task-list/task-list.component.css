@@ -10,3 +10,9 @@
   color: #333;
   text-decoration: none;
 }
+
+.task-status {
+  width: 130px;
+  text-align: center;
+  padding: 4px;
+}
