@@ -1,0 +1,12 @@
+.tasks li {
+  background-color: #e3f2fd;
+}
+
+.tasks li:hover {
+  background-color: #6cc1fd;
+}
+
+.tasks a {
+  color: #333;
+  text-decoration: none;
+}

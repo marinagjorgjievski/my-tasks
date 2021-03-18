@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-sm-6 offset-sm-3 pb-2 pb-md-3">
+    <div *ngIf="!tasks.length">
+      <h1 class="text-center">You have no tasks</h1>
+    </div>
+    <a class="btn btn-sm btn-outline-secondary mb-3 mb-md-5" routerLink="/new" >Add new Task</a>
+    <div *ngIf="signedInUser" class="card">
+      <div *ngIf="tasks.length">
+        <ul class="list-group list-group-flush tasks">
+          <li *ngFor="let task of tasks" class="list-group-item p-0">
+            <a routerLink="/detail/{{task.id}}" class="p-2 d-flex justify-content-between align-items-center">
+              {{task.description}}
+              <div class="d-flex align-items-center">
+                <span *ngIf="task.status==='Done'" class="mr-2 p-1 bg-success rounded">{{task.status}}</span>
+                <span *ngIf="task.status==='Todo'" class="mr-2 p-1 bg-warning rounded">{{task.status}}</span>
+                <span *ngIf="task.status==='Work in progress'" class="mr-2 p-1 bg-primary rounded">{{task.status}}</span>
+                <span *ngIf="task.status==='Delete'" class="mr-2 p-1 bg-danger rounded">{{task.status}}</span>
+                <button type="button" class="btn-sm btn-outline-danger" (click)="delete($event, task.id)">x</button>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
